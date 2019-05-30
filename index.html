@@ -1,0 +1,494 @@
+<html>
+    <head>
+            <script src="jquery-3.2.1.min.js"></script>
+            <script>
+                        $(document).ready(function(){
+                        
+                              $("#decimaconvertd").hide();
+                              $("#binaryconvertd").hide();
+                              $("#octalconvertd").hide();
+                              $("#hexconvertd").hide();
+
+                                $("#d").click(function(){
+                              
+                              $("#binaryconvertd").hide();
+                              $("#octalconvertd").hide();
+                              $("#hexconvertd").hide();
+                              $("#selection").hide(500);
+                              $("#decimaconvertd").show(500);
+                                });
+
+
+                                  $("#b").click(function(){
+                              
+                                    $("#decimaconvertd").hide();
+                              $("#octalconvertd").hide();
+                              $("#hexconvertd").hide();
+                              $("#selection").hide(500);
+                              
+                              $("#binaryconvertd").show(500);
+                                });
+
+
+
+                                  $("#o").click(function(){
+                              
+                              $("#binaryconvertd").hide();
+                              
+                              $("#hexconvertd").hide();
+                             
+                              $("#decimaconvertd").hide();
+                              $("#selection").hide(500);
+                              $("#octalconvertd").show(500);
+                                });
+
+
+                                  $("#h").click(function(){
+                              
+                              $("#binaryconvertd").hide();
+                              $("#octalconvertd").hide();
+                              $("#decimaconvertd").hide();
+                              $("#selection").hide(500);
+                              
+                              $("#hexconvertd").show(500);
+                                });
+
+
+
+                                $("#back1").click(function(){
+                              
+                              $("#binaryconvertd").hide();
+                              $("#octalconvertd").hide();
+                              $("#decimaconvertd").hide(500);
+                              $("#hexconvertd").hide();
+                              $("#selection").show(500);
+                              
+                             
+                                });
+
+                                 $("#back2").click(function(){
+                              
+                              $("#binaryconvertd").hide(500);
+                              $("#octalconvertd").hide();
+                              $("#decimaconvertd").hide();
+                              $("#hexconvertd").hide();
+                              $("#selection").show(500);
+                              
+                             
+                                });
+
+                                
+                                $("#back3").click(function(){
+                              
+                              $("#binaryconvertd").hide();
+                              $("#octalconvertd").hide(500);
+                              $("#decimaconvertd").hide();
+                              $("#hexconvertd").hide();
+                              $("#selection").show(500);
+                              
+                             
+                                });
+
+
+                                $("#back4").click(function(){
+                              
+                              $("#binaryconvertd").hide();
+                              $("#octalconvertd").hide();
+                              $("#decimaconvertd").hide();
+                              $("#hexconvertd").hide(500);
+                              $("#selection").show(500);
+                              
+                             
+                                });
+
+                                
+
+       
+
+                              
+                       
+                  });
+            </script>
+        <style>
+           
+            .mains{
+
+                
+                   font-family: Verdana, Geneva, Tahoma, sans-serif, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            width: 30%;
+            height: 40%;
+            margin-left:30%;
+            margin-top:1%;
+            background:linear-gradient(90deg,#03a9f4,#f441a4,#ffeb3b,#03a9f4);
+            background-size: 200%;
+            padding-left: 10%;
+            padding-top: 5%;
+            border-radius: 7px;
+            border-color:#000000 ;
+            transition:0.3s;
+            }
+
+            .mains:hover{
+                  background-size: 170%;
+                  margin-left:27%;
+                width: 35%;
+            height: 45%;   
+            transition:0.3s;
+           
+            }
+            
+           
+            button {
+                  font-style:initial;
+                  font-family: Verdana, Geneva, Tahoma, sans-serif, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                  padding: 5px 30px ;
+                  color:#000000;
+                  background: #fbfcfb;
+                 
+                 width:60%;
+                  margin-left:22%;
+                  border-radius: 7px;
+                  
+                  
+                  
+                  }
+
+            button:hover{
+                 
+                  color:rgb(253, 249, 249);
+                  transition:0.3s;
+                  background: #000000;
+                 
+            }
+
+            
+            table{
+                  border:1px;
+                  
+            }
+                  td {
+                        padding-top: .5em;
+                              padding-bottom: .5em;
+                   }
+            input{
+                  border:#000000 ;
+                    border-radius: 2px;
+                   
+            }
+
+             #decimals{
+ 
+                  font-family: Verdana, Geneva, Tahoma, sans-serif, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                        width: 20%;
+                        height: 80%;
+                        background:linear-gradient(90deg,#03a9f4,#f441a4,#ffeb3b,#03a9f4);
+                        
+                        float: left;
+                        
+                  }
+             #decimals:hover{
+                   background:red;
+                   transition: 0.3s;
+                   border-radius: 7px;
+                  
+
+             }     
+           
+            #binaries{
+                  font-family: Verdana, Geneva, Tahoma, sans-serif, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                        width: 20%;
+                        height: 80%;
+                        background:linear-gradient(90deg,#03a9f4,#f441a4,#ffeb3b,#03a9f4);
+                        
+                        float:right;
+            }
+            
+            
+            
+      #i1{
+            padding-left:20%;
+            padding-top:1%;
+
+      }
+          #head{
+            font-family: Verdana, Geneva, Tahoma, sans-serif, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                background: #000000;
+                color: #fbfcfb;
+               
+                padding: 1 0 1 0;
+          }
+          #selection{
+                background: #000000;
+                margin:1% 0 0 0;
+                padding:1% 0 1% 10%;
+          }
+          
+          #foot{
+            font-family: Verdana, Geneva, Tahoma, sans-serif, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                background: #000000;
+                color: #fbfcfb;
+               margin-top: 3%;
+                padding: 1 0 1 0;
+          }
+        </style>
+    </head>
+
+        <script>
+
+
+
+          
+
+                function decimal() {
+                    
+                    var number1=document.getElementById('decimalnum').value;
+                    var n=parseInt(number1,10);
+                    var bin=n.toString(2).toUpperCase();
+                    document.getElementById('dbinarynum').value=bin;
+                    var oct=n.toString(8).toUpperCase();
+                    document.getElementById('doctnum').value=oct;
+                    var hex=n.toString(16).toUpperCase();
+                    document.getElementById('dhexnum').value=hex;
+
+                   
+         }
+
+
+         function binary(){
+            var number1=document.getElementById('binarynum').value;
+            var n=parseInt(number1,2);
+            var dec=n.toString(10).toUpperCase();
+            document.getElementById('bdecimalnum').value=dec;
+            var oct=n.toString(8).toUpperCase();
+            document.getElementById('boctnum').value=oct;
+            var hex=n.toString(16).toUpperCase();
+            document.getElementById('bhexnum').value=hex;
+            
+            
+           
+         }
+
+         function octal(){
+            var number1=document.getElementById('octnum').value;
+            var bin=parseInt(number1,8);
+            var ans=bin.toString(2).toUpperCase();
+            document.getElementById('obinarynum').value=ans;
+            var dec=bin.toString(10).toUpperCase();
+            document.getElementById('odecimalnum').value=dec;
+            var hex=bin.toString(16).toUpperCase();
+            document.getElementById('ohexnum').value=hex;
+         }
+
+
+     function hexadecimal(){
+        var number1=document.getElementById('hexnum').value;
+        var n=parseInt(number1,16);
+        var bin=n.toString(2).toUpperCase();
+        document.getElementById('hbinarynum').value=bin;
+        var oct=n.toString(8).toUpperCase();
+        document.getElementById('hoctnum').value=oct;
+        var dec=n.toString(10).toUpperCase();
+        document.getElementById('hdecimalnum').value=dec;
+
+
+
+
+     }   
+
+
+          </script>
+   <body>
+      <div id="head">
+            <h2 align="center">THE CODE COVERTER</h2>
+      </div>
+
+            <img id="i1" class="mySlides" src="slide1.jpg" width="60%" height="80%" >
+            <img id="i1" class="mySlides" src="slide2.jpg"  width="60%" height="80%">
+            <img id="i1" class="mySlides" src="slide3.jpg"  width="60%" height="80%">
+<script>
+        var myIndex = 0;
+            carousel();
+
+            function carousel() {
+                  var i;
+                  var x = document.getElementsByClassName("mySlides");
+                  for (i = 0; i < x.length; i++) {
+                  x[i].style.display = "none";  
+                   }
+                  myIndex++;
+                  if (myIndex > x.length) {myIndex = 1}    
+                  x[myIndex-1].style.display = "block";  
+                  setTimeout(carousel, 5000); // Change image every 2 seconds
+                  }
+</script>
+<img src="line.png" height="5%" width="100%">
+<div id="selection">
+
+           
+            <img id="d" src="decimalconvert.jpg" width="20%" height="70%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           <img id="b" src="binaryconvert.jpg" width="20%" height="70%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            
+                        <img id="o" src="Octalconvert.jpg" width="20%" height="70%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                       <img id="h" src="hexaconvert.jpg" width="20%" height="70%">
+                       
+       
+ </div>
+
+           
+    <div class="mains" id="decimaconvertd">
+            
+        <table>
+            <tr>
+                    <td><label>Decimal Number</label></td>
+                    <td><input type="text" id="decimalnum"></td>
+            </tr>
+            <tr>   
+                    <td colspan="2"><button onclick="decimal()">Convert For Me</button></td>  
+                  
+                    
+                    
+             </tr>
+             <tr>
+                   <td> <label>Binary Number</label></td>
+                   <td> <input type="text" id="dbinarynum"></td>
+
+             </tr>       
+    
+             <tr>
+                    <td> <label>Octal Number</label></td>
+                    <td> <input type="text" id="doctnum"></td>
+ 
+              </tr>       
+
+
+              <tr>
+                    <td> <label>Hexadecimal Number</label></td>
+                    <td> <input type="text" id="dhexnum"></td>
+ 
+              </tr>   
+              <tr>
+
+                        <td colspan="2"><button id="back1">Back</button></td>  
+              </tr>    
+
+
+            
+        </table>
+    </div>
+
+    <div class="mains" id="binaryconvertd">
+            <table>
+                <tr>
+                        <td><label>Binary Number</label></td>
+                        <td><input type="text" id="binarynum"></td>
+                </tr>
+                <tr>
+                        <td colspan="2"><button onclick="binary()">Convert For Me</button></td>    
+                 </tr>
+                 <tr>
+                       <td> <label>Decimal Number</label></td>
+                       <td> <input type="text" id="bdecimalnum"></td>
+    
+                 </tr>       
+        
+                 <tr>
+                        <td> <label>Octal Number</label></td>
+                        <td> <input type="text" id="boctnum"></td>
+     
+                  </tr>       
+    
+    
+                  <tr>
+                        <td> <label>Hexadecimal Number</label></td>
+                        <td> <input type="text" id="bhexnum"></td>
+     
+                  </tr>       
+                  <tr>
+
+                              <td colspan="2"><button id="back2">Back</button></td>  
+                    </tr>   
+    
+                
+            </table>
+        </div>
+
+
+        <div class="mains" id="octalconvertd">
+                <table>
+                    <tr>
+                            <td><label>Octal Number</label></td>
+                            <td><input type="text" id="octnum"></td>
+                    </tr>
+                    <tr>
+                            <td colspan="2"><button onclick="octal()">Convert For Me</button></td>    
+                     </tr>
+                     <tr>
+                           <td> <label>Binary Number</label></td>
+                           <td> <input type="text" id="obinarynum"></td>
+        
+                     </tr>       
+            
+                     <tr>
+                            <td> <label>Decimal Number</label></td>
+                            <td> <input type="text" id="odecimalnum"></td>
+         
+                      </tr>       
+        
+        
+                      <tr>
+                            <td> <label>Hexadecimal Number</label></td>
+                            <td> <input type="text" id="ohexnum"></td>
+         
+                      </tr>       
+        
+                      <tr>
+
+                              <td colspan="2"><button id="back3">Back</button></td>  
+                    </tr>   
+                    
+                </table>
+            </div>
+
+
+            <div class="mains" id="hexconvertd">
+                    <table>
+                        <tr>
+                                <td><label>Hexadecimal Number</label></td>
+                                <td><input type="text" id="hexnum"></td>
+                        </tr>
+                        <tr>
+                                <td colspan="2"><button onclick="hexadecimal()">Convert For Me</button></td>    
+                         </tr>
+                         <tr>
+                               <td> <label>Binary Number</label></td>
+                               <td> <input type="text" id="hbinarynum"></td>
+            
+                         </tr>       
+                
+                         <tr>
+                                <td> <label>Octal Number</label></td>
+                                <td> <input type="text" id="hoctnum"></td>
+             
+                          </tr>       
+            
+            
+                          <tr>
+                                <td> <label>Decimal Number</label></td>
+                                <td> <input type="text" id="hdecimalnum"></td>
+             
+                          </tr>       
+            
+                          <tr>
+
+                                    <td colspan="2"><button id="back4">Back</button></td>  
+                          </tr>   
+                        
+                    </table>
+                </div>
+
+
+                <div id="foot">
+                  <h2 align="center">WEBSITE BY A.M. CORP. </h2>
+            </div>
+    </body>
+</html>
